@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+}
+
+canvas {
+  border: 2px solid #333;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.shadow-particle {
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(75,0,130,0.4) 100%);
+}
+
+.light-particle {
+  background: radial-gradient(circle, rgba(255,255,0,0.8) 0%, rgba(255,215,0,0.4) 100%);
+}
+
+.claw-particle {
+  background: radial-gradient(circle, rgba(220,20,60,0.8) 0%, rgba(139,0,0,0.4) 100%);
+}
+
+.space-particle {
+  background: radial-gradient(circle, rgba(138,43,226,0.8) 0%, rgba(75,0,130,0.4) 100%);
+}
+
+.realm-button {
+  transition: all 0.3s ease;
+}
+
+.realm-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.stats-panel {
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.health-bar, .xp-bar {
+  transition: width 0.5s ease;
+}
+
+.ability-cooldown {
+  background: conic-gradient(from 0deg, transparent 0%, rgba(255,255,255,0.3) 100%);
+}
+
+#bgMusic {
+  display: none;
+}
